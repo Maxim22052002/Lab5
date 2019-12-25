@@ -55,7 +55,7 @@ namespace Number5_1_
                         pricelist[pos].quantity = Convert.ToInt32(Console.ReadLine());
                         dateTimes[datepos] = DateTime.Now;
                         string addnote = pricelist[3].nameofprod;
-                        explainer[datepos] = $"добавлена запись \"{addnote}\"";
+                        explainer[datepos] = $"запись добавлена \"{addnote}\"";
                         datepos++;
                         pos++;
                         Console.Clear();
@@ -65,7 +65,7 @@ namespace Number5_1_
                         Console.WriteLine("Введите номер удаляемой записи: ");
                         int numdel = Convert.ToInt32(Console.ReadLine());
                         string numrec = pricelist[numdel].nameofprod;
-                        explainer[datepos] = $"удалена запись \"{numrec}\"";
+                        explainer[datepos] = $"запись удалена \"{numrec}\"";
                         for (int i = numdel; i < pos; i++)
                         {
                             pricelist[i].nameofprod = pricelist[i + 1].nameofprod;
@@ -93,7 +93,7 @@ namespace Number5_1_
                         Console.WriteLine("Введите новое количество товара: ");
                         pricelist[numberred].quantity = Convert.ToInt32(Console.ReadLine());
                         dateTimes[datepos] = DateTime.Now;
-                        explainer[datepos] = $"обновлена запись \"{postupdated}\"";
+                        explainer[datepos] = $"запись обновлена \"{postupdated}\"";
                         datepos++;
                         Console.Clear();
                         break;
